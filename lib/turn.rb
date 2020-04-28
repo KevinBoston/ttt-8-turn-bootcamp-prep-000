@@ -26,12 +26,11 @@ def valid_move?(input, board, char = "X")
 end
 
 
-def position_taken?(input, board, char = "X")
-  input_to_index(input)
-  if board[index] == "" || board[index] == " " || board[index] == nil
-    taken = FALSE
-  else
-    taken = TRUE
+def position_taken?(board, index)
+  board[index] !== "" || board[index] !== " " || board[index] !== nil
   end
   
+end
+def position_taken?(board, index)
+  board[index] != " "
 end
