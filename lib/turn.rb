@@ -9,22 +9,20 @@ end
 
 
 def turn()
-  
+  puts "Please enter 1-9:"
+  input = 
   
   
 end
 
 def valid_move?(input, board, char = "X")
-  
-  
+  input_to_index(input)
+  position_taken?(input, board, char)
   
 end
 
 
 def position_taken?(input, board, char = "X")
-  def input_to_index (input)
-    index = input.to_i -1
-  end
   input_to_index(input)
   if board[index] == "" || board[index] == " " || board[index] == nil
     taken = FALSE
@@ -33,3 +31,6 @@ def position_taken?(input, board, char = "X")
   end
   
 end
+def input_to_index (input)
+    index = input.to_i -1
+  end
