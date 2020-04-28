@@ -20,7 +20,8 @@ end
 
 def turn()
   puts "Please enter 1-9:"
-  input = 
+  input = gets.strip
+  index = input_to_index(input)
   
   
 end
@@ -32,6 +33,6 @@ def position_taken?(board, index)
   board[index] !== "" || board[index] !== " " || board[index] !== nil
 end
 
-def move(board, index, char)
+def move(board, index, char = "X")
   board[index] = char
 end
