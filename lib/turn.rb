@@ -19,8 +19,8 @@ def turn()
   
 end
 
-def valid_move?(input, board, char = "X")
-  input_to_index(input)
+def valid_move?(index, )
+  
   position_taken?(input, board, char)
   
 end
