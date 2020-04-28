@@ -25,6 +25,11 @@ def position_taken?(input, board, char = "X")
   def input_to_index (input)
     index = input.to_i -1
   end
-  
+  input_to_index(input)
+  if board[index] == "" || board[index] == " " || board[index] == nil
+    taken = FALSE
+  else
+    taken = TRUE
+  end
   
 end
