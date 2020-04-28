@@ -18,7 +18,7 @@ def valid_move?(board, index)
   end
 end
 
-def turn()
+def turn(board)
   puts "Welcome to Tic Tac Toe!"
   display_board(board)
   puts "Please enter 1-9:"
