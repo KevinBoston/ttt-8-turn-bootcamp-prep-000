@@ -14,3 +14,17 @@ def turn()
   
 end
 
+def valid_move?(input, board, char = "X")
+  
+  
+  
+end
+
+
+def position_taken?(input, board, char = "X")
+  def input_to_index (input)
+    index = input.to_i -1
+  end
+  
+  
+end
