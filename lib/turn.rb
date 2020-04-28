@@ -7,6 +7,10 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+def input_to_index(input)
+  input.to_i - 1
+end
+
 
 def turn()
   puts "Please enter 1-9:"
@@ -31,6 +35,3 @@ def position_taken?(input, board, char = "X")
   end
   
 end
-def input_to_index (input)
-    index = input.to_i -1
-  end
