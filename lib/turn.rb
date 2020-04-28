@@ -26,6 +26,9 @@ def turn()
   index = input_to_index(input)
   if validmove?(board, index)
     move(board, index)
+    display_board(board)
+  else
+    turn()
   end
   
 end
